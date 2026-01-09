@@ -7,7 +7,8 @@ import {
   UserButton,
 } from '@clerk/nextjs'
 import './globals.css'
-
+// Agrega esta línea para forzar el renderizado dinámico en Vercel
+export const dynamic = 'force-dynamic';
 export default function RootLayout({
   children,
 }: Readonly<{
